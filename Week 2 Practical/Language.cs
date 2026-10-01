@@ -18,7 +18,7 @@ void Main()
     {
 
         PrintMenu();
-        option = InputOption();
+        option = GetOption();
 
         string message = GetMessage(option);
         Console.WriteLine($"\n{message}\n");
@@ -37,7 +37,7 @@ void PrintMenu()
 }
 
 // Task 2
-int InputOption()
+int GetOption()
 {
     int option = 0;
 
@@ -51,7 +51,7 @@ int InputOption()
     }
     catch (Exception ex)
     {
-        Console.WriteLine("\n[Error] Ya done goofed: {ex.Message}");
+        Console.WriteLine("\n[Error] Please enter a number: {ex.Message}");
     }
 
     return option;
