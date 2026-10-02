@@ -10,11 +10,5 @@ Main();
 
 void Main()
 {
-    StringCypher();
-}
-
-void StringCypher()
-{
-    Console.WriteLine("Enter a Sentence:");
     
 }
